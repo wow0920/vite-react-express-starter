@@ -1,69 +1,94 @@
-# React + TypeScript + Vite
+d
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Vite + React + Express.js TypeScript Starter Kit
 
-Currently, two official plugins are available:
+A modern boilerplate for building full-stack applications with:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:** Vite + React + TypeScript
+- **Backend:** Express.js + TypeScript
 
-## Expanding the ESLint configuration
+This starter kit provides a ready-to-use development environment for building scalable web applications with a unified TypeScript codebase for both client and server.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- ⚡️ Fast development with Vite
+- ⚛️ Modern React setup (with hooks, HMR, etc.)
+- 🟦 TypeScript for both client and server
+- 🚀 Express.js API server
+- 🛠️ Pre-configured scripts for development and production
+- 📦 Easy build and deployment
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## Getting Started
+
+### 1. Install dependencies
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Run in development mode
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This will start both the Vite dev server (for React) and the Express backend with hot reload.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+- Frontend: [http://localhost:5173](http://localhost:5173)
+- Backend/API: [http://localhost:3000](http://localhost:3000)
+
+### 3. Build for production
+
+```bash
+npm run build
+```
+
+### 4. Start production server
+
+```bash
+npm run start
+```
+
+---
+
+## Project Structure
+
+```
+.
+├── src/
+│   ├── client/      # React + Vite frontend (TypeScript)
+│   └── server/      # Express.js backend (TypeScript)
+├── dist/            # Production build output
+├── package.json     # Root scripts and dependencies
+├── README.md        # Project documentation
+└── ...
+```
+
+- **src/client/**: All frontend source code (React components, routes, assets, etc.)
+- **src/server/**: All backend source code (Express routes, API logic, etc.)
+
+---
+
+## Scripts
+
+- `npm run dev` – Start both frontend and backend in development mode
+- `npm run build` – Build both frontend and backend for production
+- `npm run start` – Start the production server
+
+---
+
+## Customization
+
+- Add your React components in `client/`
+- Add your Express routes and logic in `server/`
+- Update TypeScript configs as needed for your project
+
+---
+
+## License
+
+MIT
