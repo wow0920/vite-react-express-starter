@@ -12,5 +12,5 @@ app.use(express.json());
 app.use("/api", routes);
 
 ViteExpress.listen(app, PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
+  console.log("\nDev Server is running: \x1b[1m\x1b[34m%s\x1b[0m\n", `http://localhost:${PORT}`);
 });
