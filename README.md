@@ -1,5 +1,3 @@
-d
-
 # Vite + React + Express.js TypeScript Starter Kit
 
 A modern boilerplate for building full-stack applications with:
@@ -15,6 +13,7 @@ This starter kit provides a ready-to-use development environment for building sc
 
 - ⚡️ Fast development with Vite
 - ⚛️ Modern React setup (with hooks, HMR, etc.)
+- 🎨 Tailwind CSS by default for rapid UI development
 - 🟦 TypeScript for both client and server
 - 🚀 Express.js API server
 - 🛠️ Pre-configured scripts for development and production
@@ -32,14 +31,13 @@ npm install
 
 ### 2. Run in development mode
 
-This will start both the Vite dev server (for React) and the Express backend with hot reload.
+This will start both the frontend (Vite + React) and backend (Express) together on the same port (3000) with hot refresh enabled.
 
 ```bash
 npm run dev
 ```
 
-- Frontend: [http://localhost:5173](http://localhost:5173)
-- Backend/API: [http://localhost:3000](http://localhost:3000)
+- App (frontend + backend API): [http://localhost:3000](http://localhost:3000)
 
 ### 3. Build for production
 
@@ -84,6 +82,7 @@ npm run start
 ## Customization
 
 - Add your React components in `client/`
+- Style your frontend easily with Tailwind CSS (already configured)
 - Add your Express routes and logic in `server/`
 - Update TypeScript configs as needed for your project
 
