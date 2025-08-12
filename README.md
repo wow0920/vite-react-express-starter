@@ -48,7 +48,7 @@ npm run build
 ### 4. Start production server
 
 ```bash
-npm run start
+npm run prod
 ```
 
 ---
@@ -75,7 +75,7 @@ npm run start
 
 - `npm run dev` – Start both frontend and backend in development mode
 - `npm run build` – Build both frontend and backend for production
-- `npm run start` – Start the production server
+- `npm run prod` – Start the production server
 
 ---
 
