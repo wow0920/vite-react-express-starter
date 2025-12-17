@@ -83,6 +83,7 @@ npm run prod
 
 - Add your React components in `client/`
 - Style your frontend easily with Tailwind CSS (already configured)
+- Fetch data from the backend API using the combination of Tanstack Query and Axios
 - Add your Express routes and logic in `server/`
 - Update TypeScript configs as needed for your project
 
